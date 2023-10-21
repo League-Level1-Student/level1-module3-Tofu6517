@@ -9,7 +9,7 @@ import java.awt.Color;
  * 1. Run the program and move the sliders.
  *    Notice that changing the radius or color of one of the sliders only
  *    affects one of the circles.
- * 
+	
  * 2. Add "static" to the beginning of the radius and color member
  *    variables in the Circle class in this package
  * 
