@@ -24,16 +24,23 @@ import game_tools.Sound;
  * In the CowTimerRunner class:
  * Complete the main method
  */
+
+
 public class CowTimer {
     private int seconds;
-
+    CowTimer(int seconds){
+    	this.seconds=seconds;
+    }
     public void setTime(int seconds) {
         this.seconds = seconds;
         System.out.println("Cow time set to " + this.seconds + " seconds.");
     }
 
     public void start() throws InterruptedException {
-        
+    	for(int i=0;i<seconds;i++) {
+        System.out.println(seconds-i);
+        Thread.sleep(100);
+    	}
     }
 
     public void playSound(final String file) {
